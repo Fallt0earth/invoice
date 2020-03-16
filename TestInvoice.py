@@ -28,3 +28,7 @@ def test_CanCalculateTotalDiscount(invoice, products):
 def test_CanCalculateTotalPurePrice(invoice, products):
     testTotalPurePrice = invoice.totalPurePrice(products)
     assert testTotalPurePrice == 69.38
+
+def test_CanInputAnswer(invoice):
+    testInputAnswer = invoice.inputAnswer("Pen")
+    assert testInputAnswer == "Pen"
